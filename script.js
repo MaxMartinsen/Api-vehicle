@@ -7,7 +7,7 @@ async function fetchVehicleData() {
 
     const proxyUrl = "https://cors-anywhere.herokuapp.com/";
     const apiUrl = `https://www.vegvesen.no/ws/no/vegvesen/kjoretoy/felles/datautlevering/enkeltoppslag/kjoretoydata?kjennemerke=${kjennemerke}`;
-    const url = apiUrl;
+    const url = proxyUrl + apiUrl;
 
     const headers = {
         'SVV-Authorization': 'bf088d19-9ea8-42ca-bc99-5629f0c9d6d8'
